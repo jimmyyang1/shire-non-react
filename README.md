@@ -1,0 +1,1 @@
+# shire-non-react
