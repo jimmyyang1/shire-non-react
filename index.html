@@ -31,14 +31,14 @@
 		<h1>Just Shire Things</h1>
 	</header>
 	<div class="text-center">
-	<div class="filter-button-group btn-group">
-		<button type="button" class="btn btn-default" data-filter="*">Show all</button>
-		<button type="button" class="btn btn-default" data-filter=".Alex">Alex</button>
-		<button type="button" class="btn btn-default" data-filter=".Aman">Aman</button>
-		<button type="button" class="btn btn-default" data-filter=".David">David</button>
-		<button type="button" class="btn btn-default" data-filter=".Jimmy">Jimmy</button>
-		<button type="button" class="btn btn-default" data-filter=".Lowell">Lowell</button>
-	</div>
+		<div class="filter-button-group btn-group">
+			<button type="button" class="btn btn-default" data-filter="*">Show all</button>
+			<button type="button" class="btn btn-default" data-filter=".Alex">Alex</button>
+			<button type="button" class="btn btn-default" data-filter=".Aman">Aman</button>
+			<button type="button" class="btn btn-default" data-filter=".David">David</button>
+			<button type="button" class="btn btn-default" data-filter=".Jimmy">Jimmy</button>
+			<button type="button" class="btn btn-default" data-filter=".Lowell">Lowell</button>
+		</div>
 	</div>
 	<div class="content-placeholder container-fluid center-block">
 	</div>
@@ -51,7 +51,7 @@
 			 			{{author}}
 			 		</div>
 			 		<div class="quoteBody">
-			 			"{{text}} {{timestamp}}"
+			 			"{{quote}}" </br></br>{{timestamp}}
 			 		</div>
 			 	</div>
 			{{/each}}
