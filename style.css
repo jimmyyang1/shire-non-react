@@ -23,11 +23,5 @@ header{
 }
 .btn-default{
 	background:none;
-}
-.btn-group{
-
-}
-
-.btn-group-wrap {
-    text-align: center;
+	margin-bottom: 20px;
 }

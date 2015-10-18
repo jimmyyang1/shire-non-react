@@ -27,21 +27,23 @@
 	</head>
 
 	<body>
-
-	</body>
 	<header>
 		<h1>Just Shire Things</h1>
 	</header>
-
+	<div class="text-center">
 	<div class="filter-button-group btn-group">
-		<button type="button" class="btn btn-default col-md-2" data-filter="*" >Show all</button>
-		<button type="button" class="btn btn-default col-md-2" data-filter=".Alex">Alex</button>
-		<button type="button" class="btn btn-default col-md-2" data-filter=".Aman">Aman</button>
-		<button type="button" class="btn btn-default col-md-2" data-filter=".David">David</button>
-		<button type="button" class="btn btn-default col-md-2" data-filter=".Jimmy">Jimmy</button>
-		<button type="button" class="btn btn-default col-md-2" data-filter=".Lowell">Lowell</button>
+		<button type="button" class="btn btn-default" data-filter="*">Show all</button>
+		<button type="button" class="btn btn-default" data-filter=".Alex">Alex</button>
+		<button type="button" class="btn btn-default" data-filter=".Aman">Aman</button>
+		<button type="button" class="btn btn-default" data-filter=".David">David</button>
+		<button type="button" class="btn btn-default" data-filter=".Jimmy">Jimmy</button>
+		<button type="button" class="btn btn-default" data-filter=".Lowell">Lowell</button>
+	</div>
+	</div>
+	<div class="content-placeholder container-fluid center-block">
 	</div>
 	<script id="quote-template" type="text/x-handlebars-template">
+
 		<div class="quoteContainer">
 			{{#each shireQuotes}}
 			 	<div class="quoteBlock {{author}} col-md-3">
@@ -55,7 +57,5 @@
 			{{/each}}
 		</div>
 	</script>
-
-	<div class="content-placeholder container-fluid center-block">
-	</div>
+	</body>
 </html>
