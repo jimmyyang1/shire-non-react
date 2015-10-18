@@ -33,25 +33,13 @@
 		<h1>Just Shire Things</h1>
 	</header>
 
-	<div class="filter-button-group btn-group btn-group-justified">
-		<div class="filter-button-group btn-group">
-			<button type="button" class="btn btn-default" data-filter="*" >Show all</button>
-		</div>
-		<div class="filter-button-group btn-group">
-			<button type="button" class="btn btn-default" data-filter=".Alex">Alex</button>
-		</div>
-		<div class="filter-button-group btn-group">
-			<button type="button" class="btn btn-default" data-filter=".Aman">Aman</button>
-		</div>
-		<div class="filter-button-group btn-group">
-			<button type="button" class="btn btn-default" data-filter=".David">David</button>
-		</div>
-		<div class="filter-button-group btn-group">
-			<button type="button" class="btn btn-default" data-filter=".Jimmy">Jimmy</button>
-		</div>
-		<div class="filter-button-group btn-group">
-			<button type="button" class="btn btn-default" data-filter=".Lowell">Lowell</button>
-		</div>
+	<div class="filter-button-group btn-group">
+		<button type="button" class="btn btn-default col-md-2" data-filter="*" >Show all</button>
+		<button type="button" class="btn btn-default col-md-2" data-filter=".Alex">Alex</button>
+		<button type="button" class="btn btn-default col-md-2" data-filter=".Aman">Aman</button>
+		<button type="button" class="btn btn-default col-md-2" data-filter=".David">David</button>
+		<button type="button" class="btn btn-default col-md-2" data-filter=".Jimmy">Jimmy</button>
+		<button type="button" class="btn btn-default col-md-2" data-filter=".Lowell">Lowell</button>
 	</div>
 	<script id="quote-template" type="text/x-handlebars-template">
 		<div class="quoteContainer">
@@ -61,7 +49,7 @@
 			 			{{author}}
 			 		</div>
 			 		<div class="quoteBody">
-			 			"{{text}}"
+			 			"{{text}} {{timestamp}}"
 			 		</div>
 			 	</div>
 			{{/each}}

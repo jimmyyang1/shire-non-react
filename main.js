@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    url = "https://spreadsheets.google.com/feeds/list/1m1dmaFdFACRzloJQZAssirckGMdxNIYqD5o-ugSwc3g/od6/public/values?alt=json"
+    url = "https://spreadsheets.google.com/feeds/list/1BhshwcHXL7pQ_VJLFf3Ue3e85BW5Hhi9qRAgC4vvgVw/1/public/values?alt=json"
 
 	$.getJSON(url, function(json){
 		var data = clean_google_sheet_json(json);

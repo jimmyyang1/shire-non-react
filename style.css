@@ -24,9 +24,10 @@ header{
 .btn-default{
 	background:none;
 }
-.btn-group-justified{
-	padding-left:20%;
-	padding-right:20%;
-	margin-top:20px;
-	margin-bottom:20px;
+.btn-group{
+
+}
+
+.btn-group-wrap {
+    text-align: center;
 }
