@@ -1,0 +1,32 @@
+header{
+	text-align: center;
+}
+.quoteContainer{
+	margin-left:20%;
+	margin-right:20%;
+}
+
+.quoteBlock{
+	margin-bottom: 25px;
+	
+}
+.quoteBody{
+	border:2px solid black;
+	padding: 20px;
+
+}
+.quoteAuthor{
+	text-align: center;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+.btn-default{
+	background:none;
+}
+.btn-group-justified{
+	padding-left:20%;
+	padding-right:20%;
+	margin-top:20px;
+	margin-bottom:20px;
+}
