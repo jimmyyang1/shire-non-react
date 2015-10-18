@@ -15,5 +15,9 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/jimmyyang1/shire-non-react/issues"
+  },
+  "dependencies": {
+    "connect": "~3.4.0",
+    "serve-static": "~1.10.0"
   }
 }
