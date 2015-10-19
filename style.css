@@ -1,27 +1,69 @@
+body{
+	background-color: #fad6ab;
+}
+
 header{
 	text-align: center;
 }
 .quoteContainer{
-	margin-left:20%;
 	margin-right:20%;
+	margin-left:20%;
 }
 
 .quoteBlock{
 	margin-bottom: 25px;
-	
+}
+.quoteWrap{
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 10px 6px -6px #777;
 }
 .quoteBody{
-	border:2px solid black;
-	padding: 20px;
-
+	padding:20px;
+	font-size: 25px;
 }
 .quoteAuthor{
 	text-align: center;
-	border-top: 2px solid black;
-	border-left: 2px solid black;
-	border-right: 2px solid black;
+	font-weight: bold;
+	font-size: 20px;
+	border-bottom: 2px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .btn-default{
 	background:none;
+	background-color: white;
 	margin-bottom: 20px;
+	border: 2px solid black;
+}
+.btn-default:hover{
+	font-weight: bold;
+	background:none;
+	background-color: white;
+	margin-bottom: 20px;
+	border: 2px solid black;
+}
+.btn-default:focus{
+	font-weight: bold;
+	background:none;
+	background-color: white;
+	margin-bottom: 20px;
+	border: 2px solid black;
+}
+.share{
+	text-align: center;
+	border-top: 2px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.btn-share{
+	background:none;
+	background-color: white;
+}
+span{
+	font-size: 15px;
+}
+.activeQuote{
+	background-color:red;
 }
