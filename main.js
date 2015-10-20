@@ -23,6 +23,9 @@ $(document).ready(function(){
 			itemSelector: '.quoteBlock',
 			columnWidth: '.quoteBlock',
 		});
+
+		$("#" + window.location.hash.substr(1)).addClass("activeQuote").scrollTop();
+
 	});
 
 	$('.filter-button-group').on( 'click', 'button', function() {
@@ -30,7 +33,7 @@ $(document).ready(function(){
 	$('.quoteContainer').isotope({ filter: filterValue });
 	});
 
-	$(".modal-body").append("hello");
+	
 
 
 });

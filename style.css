@@ -65,8 +65,8 @@ header{
 span{
 	font-size: 15px;
 }
-.activeQuote{
-	background-color:red;
+.activeQuote .quoteWrap, .activeQuote .btn-share{
+	background-color: #C6FFCE;
 }
 .input-group{
 	width:100%;
