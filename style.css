@@ -4,7 +4,9 @@ body{
 
 header{
 	text-align: center;
-	font-size: 50px;
+}
+h1{
+	font-size: 5vw;
 }
 .quoteContainer{
 	margin-right:20%;
