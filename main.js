@@ -24,13 +24,20 @@ $(document).ready(function(){
 			columnWidth: '.quoteBlock',
 		});
 
-		$("#" + window.location.hash.substr(1)).addClass("activeQuote").scrollTop();
+		var quoteNum = window.location.hash.substr(1); 
+
+		$("#" + quoteNum).addClass("activeQuote");
+
+
+		$('html,body').animate({
+			scrollTop: $("#" + quoteNum).offset().top - 100
+		},500);
 
 	});
 
 	$('.filter-button-group').on( 'click', 'button', function() {
 	  	var filterValue = $(this).attr('data-filter');
-	$('.quoteContainer').isotope({ filter: filterValue });
+		$('.quoteContainer').isotope({ filter: filterValue });
 	});
 
 	
