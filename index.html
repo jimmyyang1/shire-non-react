@@ -18,6 +18,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+	<script src="ZeroClipboard.js"></script>
 
 
 	<script src="main.js"></script>
@@ -32,12 +33,12 @@
 	</header>
 	<div class="text-center">
 		<div class="filter-button-group btn-group">
-			<button type="button" class="btn btn-default" data-filter="*">Show all</button>
-			<button type="button" class="btn btn-default" data-filter=".Alex">Alex</button>
-			<button type="button" class="btn btn-default" data-filter=".Aman">Aman</button>
-			<button type="button" class="btn btn-default" data-filter=".David">David</button>
-			<button type="button" class="btn btn-default" data-filter=".Jimmy">Jimmy</button>
-			<button type="button" class="btn btn-default" data-filter=".Lowell">Lowell</button>
+			<button type="button" class="btn btn-action" data-filter="*">Show all</button>
+			<button type="button" class="btn btn-action" data-filter=".Alex">Alex</button>
+			<button type="button" class="btn btn-action" data-filter=".Aman">Aman</button>
+			<button type="button" class="btn btn-action" data-filter=".David">David</button>
+			<button type="button" class="btn btn-action" data-filter=".Jimmy">Jimmy</button>
+			<button type="button" class="btn btn-action" data-filter=".Lowell">Lowell</button>
 		</div>
 	</div>
 	<div class="content-placeholder container-fluid center-block">
@@ -75,11 +76,13 @@
 				      </div>
 				      <div class="modal-body">
 				        <div class="input-group">
-						  <input type="text" class="form-control" value="https://justshirethings.herokuapp.com/#{{@index}}" aria-describedby="basic-addon1">
+				        	<input type="text" class="form-control" value="https://justshirethings.herokuapp.com/#{{@index}}" aria-describedby="basic-addon1">
+				        	<span class="input-group-btn"><button class="btn btn-default" type="button" id="copy-button">Copy</button></span>
+						  
 						</div>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-action" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>

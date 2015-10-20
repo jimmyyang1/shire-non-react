@@ -38,18 +38,18 @@ h1{
 	margin-bottom: 20px;
 
 }
-.btn-default{
+.btn-action{
 	background:none;
 	background-color: white;
 	border: 2px solid black;
 }
-.btn-default:hover{
+.btn-action:hover{
 	font-weight: bold;
 	background:none;
 	background-color: white;
 	border: 2px solid black;
 }
-.btn-default:focus{
+.btn-action:focus{
 	font-weight: bold;
 	background:none;
 	background-color: white;
@@ -73,4 +73,10 @@ span{
 }
 .input-group{
 	width:100%;
+}
+.btn-default{
+	background:none;
+}
+.btn-default:focus{
+	background:none;
 }
