@@ -31,24 +31,25 @@ header{
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+.filter-button-group{
+	margin-bottom: 20px;
+
+}
 .btn-default{
 	background:none;
 	background-color: white;
-	margin-bottom: 20px;
 	border: 2px solid black;
 }
 .btn-default:hover{
 	font-weight: bold;
 	background:none;
 	background-color: white;
-	margin-bottom: 20px;
 	border: 2px solid black;
 }
 .btn-default:focus{
 	font-weight: bold;
 	background:none;
 	background-color: white;
-	margin-bottom: 20px;
 	border: 2px solid black;
 }
 .share{
@@ -66,4 +67,7 @@ span{
 }
 .activeQuote{
 	background-color:red;
+}
+.input-group{
+	width:100%;
 }
