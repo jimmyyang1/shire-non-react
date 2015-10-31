@@ -17,6 +17,6 @@
     "url": "https://github.com/jimmyyang1/shire-non-react/issues"
   },
   "dependencies": {
-    "express": "^4.13.3",
+    "express": "^4.13.3"
   }
 }
