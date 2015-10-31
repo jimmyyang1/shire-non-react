@@ -28,10 +28,42 @@
 	</head>
 
 	<body>
-	<header>
-		<h1>Just Shire Things</h1>
-	</header>
-	<div class="text-center">
+	<nav class="navbar navbar-default navbar-fixed-top" >
+	  <div class="container-fluid " style="margin-left:10%;">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Just Shire Things</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">Leaderboard <span class="sr-only">(current)</span></a></li>
+	        <li>
+		        <select class="form-control" style="margin-top:6px;">
+				  <option value = "*">Show All</option>
+				  <option value = ".Alex">Alex</option>
+				  <option value = ".Aman">Aman</option>
+				  <option value = ".David">David</option>
+				  <option value = ".Jimmy">Jimmy</option>
+				  <option value = ".Lowell">Lowell</option>
+				</select>
+			</li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+
+<!-- 	<div class="text-center">
 		<div class="filter-button-group btn-group">
 			<button type="button" class="btn btn-action" data-filter="*">Show all</button>
 			<button type="button" class="btn btn-action" data-filter=".Alex">Alex</button>
@@ -40,14 +72,14 @@
 			<button type="button" class="btn btn-action" data-filter=".Jimmy">Jimmy</button>
 			<button type="button" class="btn btn-action" data-filter=".Lowell">Lowell</button>
 		</div>
-	</div>
+	</div> -->
 	<div class="content-placeholder container-fluid center-block">
 	</div>
 	<script id="quote-template" type="text/x-handlebars-template">
 
 		<div class="quoteContainer">
 			{{#each shireQuotes}}
-			 	<div class="quoteBlock {{author}} col-md-3" id="{{@index}}">
+			 	<div class="quoteBlock {{author}} col-xs-12" id="{{@index}}">
 				 	<div class="quoteWrap">
 				 		<div class="quoteAuthor">
 				 			{{author}}

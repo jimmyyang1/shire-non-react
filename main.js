@@ -28,17 +28,38 @@ $(document).ready(function(){
 
 		$("#" + quoteNum).addClass("activeQuote");
 
+		$(".quoteBody").each(function(){
+			if($(this).text().length < 75){
+	            $(this).parent().parent().addClass("col-md-2 ");
+	        } else if ($(this).text().length < 150){
+	        	$(this).parent().parent().addClass("col-md-4 ");
+	        } else {
+	        	$(this).parent().parent().addClass("col-md-6 ")
+	        }
+	        var filterValue = $('.form-control').val();
+			$('.quoteContainer').isotope({ filter: filterValue });
+		});
 
+		$('.form-control').change(function() {
+		  	var filterValue = $(this).val();
+			$('.quoteContainer').isotope({ filter: filterValue });
+		});
 		$('html,body').animate({
 			scrollTop: $("#" + quoteNum).offset().top - 100
 		},500);
 
+
 	});
 
-	$('.filter-button-group').on( 'click', 'button', function() {
-	  	var filterValue = $(this).attr('data-filter');
+	$('.form-control').change(function() {
+	  	var filterValue = $(this).val();
 		$('.quoteContainer').isotope({ filter: filterValue });
 	});
+	$(".nav a").on("click", function(){
+	   $(".nav").find(".active").removeClass("active");
+	   $(this).parent().addClass("active");
+	});
+
 
 
 });
