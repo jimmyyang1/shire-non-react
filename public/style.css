@@ -1,13 +1,12 @@
-
 body{
 	background-image: none;
 	background-color: #fad6ab;
-	padding-top: 100px; 
+	padding-top: 75px; 
 }
 
 .quoteContainer{
-	margin-right:10%;
-	margin-left:10%;
+/*	margin-right:10%;
+	margin-left:10%;*/
 }
 
 .quoteBlock{

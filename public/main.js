@@ -29,8 +29,10 @@ $(document).ready(function(){
 		$("#" + quoteNum).addClass("activeQuote");
 
 		$(".quoteBody").each(function(){
-			if($(this).text().length < 75){
+			if($(this).text().length < 25){
 	            $(this).parent().parent().addClass("col-md-2 ");
+	        } else if ($(this).text().length < 75){
+	        	$(this).parent().parent().addClass("col-md-2 ");
 	        } else if ($(this).text().length < 150){
 	        	$(this).parent().parent().addClass("col-md-4 ");
 	        } else {
@@ -93,7 +95,7 @@ function clean_google_sheet_json(data){
 				elem[real_keyname] = value['$t'];
 			}
 		});
-		formatted_json.push(elem);
+		formatted_json.unshift(elem);
 	});
 	return formatted_json;
 };
