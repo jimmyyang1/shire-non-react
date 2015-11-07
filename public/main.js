@@ -47,7 +47,7 @@ $(document).ready(function(){
 			$('.quoteContainer').isotope({ filter: filterValue });
 		});
 		$('html,body').animate({
-			scrollTop: $("#" + quoteNum).offset().top - 100
+			scrollTop: $("#" + quoteNum).offset().top + 100
 		},500);
 
 
@@ -66,19 +66,24 @@ $(document).ready(function(){
 
 });
 
+// ZeroClipboard.config( { moviePath: "ZeroClipboard.swf"} );
 
-var client = new ZeroClipboard( $("#target-to-copy") );
+// var client = new ZeroClipboard( $(".btn-share") );
 
-client.on( "ready", function( readyEvent ) {
-  // alert( "ZeroClipboard SWF is ready!" );
-
-  client.on( "aftercopy", function( event ) {
-    // `this` === `client`
-    // `event.target` === the element that was clicked
-    event.target.style.display = "none";
-    alert("Copied text to clipboard: " + event.data["text/plain"] );
-  } );
-} );
+// $(document).on("click", client, function(client) {
+//   client.on( 'datarequested', function(client) {
+//     var text = "test";
+//     client.setText(text);
+//   });
+//   // callback triggered on successful copying
+//   client.on( 'complete', function(client, args) {
+//     console.log("Text copied to clipboard: \n" + args.text );
+//   });
+// });
+// // In case of error - such as Flash not being available
+// client.on( 'wrongflash noflash', function() {
+//   ZeroClipboard.destroy();
+// } );
 
 function clean_google_sheet_json(data){
 	var formatted_json = [];
