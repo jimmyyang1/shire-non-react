@@ -84,6 +84,7 @@ function clean_google_sheet_json(data){
 	var formatted_json = [];
 	var elem = {};
 	var real_keyname = '';
+	var myID = 1;
 	$.each(data.feed.entry, function(i, entry) {
 		elem = {};
 		$.each(entry, function(key, value){
@@ -93,8 +94,11 @@ function clean_google_sheet_json(data){
 				// get everything after gsx$
 				real_keyname = key.substring(4); 
 				elem[real_keyname] = value['$t'];
+				elem["myID"] = myID;
 			}
+			
 		});
+		myID++;
 		formatted_json.unshift(elem);
 	});
 	return formatted_json;

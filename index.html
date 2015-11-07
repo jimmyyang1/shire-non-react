@@ -45,7 +45,7 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	        <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">Leaderboard <span class="sr-only">(current)</span></a></li>
+	        <li><a href="leaderboard.html">Leaderboard <span class="sr-only">(current)</span></a></li>
 	        <li>
 		        <select class="form-control" style="margin-top:6px;">
 				  <option value = "*">Show All</option>
@@ -79,7 +79,7 @@
 
 		<div class="quoteContainer">
 			{{#each shireQuotes}}
-			 	<div class="quoteBlock {{author}} col-xs-12" id="{{@index}}">
+			 	<div class="quoteBlock {{author}} col-xs-12" id="{{myID}}">
 				 	<div class="quoteWrap">
 				 		<div class="quoteAuthor">
 				 			{{author}}
@@ -90,7 +90,7 @@
 				 		<div class="share">
 				 		<!-- Button trigger modal -->
 
-				 			<button type="button" class="btn btn-share btn-sm" data-toggle="modal" data-target="#myModal{{@index}}">
+				 			<button type="button" class="btn btn-share btn-sm" data-toggle="modal" data-target="#myModal{{myID}}">
 				  				<span class="glyphicon glyphicon-share-alt"></span>
 							</button>
 				 		</div>
@@ -99,7 +99,7 @@
 
 
 				<!-- Modal -->
-				<div class="modal fade" id="myModal{{@index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal fade" id="myModal{{myID}}" tamyID="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -107,11 +107,9 @@
 				        <h4 class="modal-title" id="myModalLabel">Copy Link</h4>
 				      </div>
 				      <div class="modal-body">
-				        <div class="input-group">
-				        	<input type="text" class="form-control" id="clipboard-text" value="https://justshirethings.herokuapp.com/#{{@index}}" aria-describedby="basic-addon1">
-				        	<span class="input-group-btn"><button class="btn btn-default" type="button" id="target-to-copy">Copy</button></span>
-						  
-						</div>
+				        <a href="https://justshirethings.herokuapp.com/#{{myID}}">https:&#47&#47justshirethings.herokuapp.com/#{{myID}}</a>
+				        <span class="input-group-btn"><button class="btn btn-default" type="button" id="target-to-copy">Copy</button></span>
+						 
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-action" data-dismiss="modal">Close</button>
