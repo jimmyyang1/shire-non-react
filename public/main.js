@@ -19,7 +19,7 @@ $(document).ready(function(){
 		$('.content-placeholder').html(theCompiledHtml);
 		var data = clean_google_sheet_json(json);
 
-		$('.quoteContainer').isotope({
+		$('.card-container').isotope({
 			itemSelector: '.quoteBlock',
 			columnWidth: '.quoteBlock',
 		});
@@ -39,28 +39,23 @@ $(document).ready(function(){
 	        	$(this).parent().parent().addClass("col-md-6 ")
 	        }
 	        var filterValue = $('.form-control').val();
-			$('.quoteContainer').isotope({ filter: filterValue });
+			$('.card-container').isotope({ filter: filterValue });
 		});
-
-		$('.form-control').change(function() {
-		  	var filterValue = $(this).val();
-			$('.quoteContainer').isotope({ filter: filterValue });
+		$(".card-grid").flip({
+			trigger:"click"
 		});
-		$('html,body').animate({
-			scrollTop: $("#" + quoteNum).offset().top + 100
-		},500);
-
 
 	});
 
 	$('.form-control').change(function() {
 	  	var filterValue = $(this).val();
-		$('.quoteContainer').isotope({ filter: filterValue });
+		$('.card-container').isotope({ filter: filterValue });
 	});
 	$(".nav a").on("click", function(){
 	   $(".nav").find(".active").removeClass("active");
 	   $(this).parent().addClass("active");
 	});
+	
 
 
 
