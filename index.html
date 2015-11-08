@@ -61,65 +61,21 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 
-
-
-<!-- 	<div class="text-center">
-		<div class="filter-button-group btn-group">
-			<button type="button" class="btn btn-action" data-filter="*">Show all</button>
-			<button type="button" class="btn btn-action" data-filter=".Alex">Alex</button>
-			<button type="button" class="btn btn-action" data-filter=".Aman">Aman</button>
-			<button type="button" class="btn btn-action" data-filter=".David">David</button>
-			<button type="button" class="btn btn-action" data-filter=".Jimmy">Jimmy</button>
-			<button type="button" class="btn btn-action" data-filter=".Lowell">Lowell</button>
-		</div>
-	</div> -->
 	<div class="content-placeholder container-fluid center-block">
 
 	</div>
+
 	<script id="quote-template" type="text/x-handlebars-template">
-
-		<div class="quoteContainer">
-			{{#each shireQuotes}}
-			 	<div class="quoteBlock {{author}} col-xs-12" id="{{myID}}">
-				 	<div class="quoteWrap">
-				 		<div class="quoteAuthor">
-				 			{{author}}
-				 		</div>
-				 		<div class="quoteBody">
-				 			"{{quote}}"
-				 		</div>
-				 		<div class="share">
-				 		<!-- Button trigger modal -->
-
-				 			<button type="button" class="btn btn-share btn-sm" data-toggle="modal" data-target="#myModal{{myID}}">
-				  				<span class="glyphicon glyphicon-share-alt"></span>
-							</button>
-				 		</div>
-				 	</div>
-			 	</div>
-
-
-				<!-- Modal -->
-				<div class="modal fade" id="myModal{{myID}}" tamyID="-1" role="dialog" aria-labelledby="myModalLabel">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Copy Link</h4>
-				      </div>
-				      <div class="modal-body">
-				        <a href="https://justshirethings.herokuapp.com/#{{myID}}">https:&#47&#47justshirethings.herokuapp.com/#{{myID}}</a>
-				        <!-- <span class="input-group-btn"><button class="btn btn-action copyButton" type="button" id="target-to-copy">Copy</button></span> -->
-						 
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-action" data-dismiss="modal">Close</button>
-				      </div>
-				    </div>
-				  </div>
+		{{#each shireQuotes}}
+			<div class="card-grid col-md-3">
+				<div class="front">
+				Front
 				</div>
-			{{/each}}
-		</div>
+				<div class="back">
+				Back
+				</div>
+			</div>
+		{{/each}}
 	</script>
 	</body>
 </html>
